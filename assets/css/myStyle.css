@@ -23,10 +23,10 @@ a.navbar-brand {
   --bs-btn-disabled-bg: #366d66;
   --bs-btn-disabled-border-color: #366d66;
 }
-button a.navLink{
+button a.navLink {
   color: #fff;
 }
-button:hover a.navLink{
+button:hover a.navLink {
   color: var(--mainColor);
 }
 .navbar {
@@ -59,9 +59,9 @@ button:hover a.navLink{
   border-top-right-radius: 50px;
 }
 figure.mainImg {
-  background-image: url("../img/home/1.png");
-  background-size: contain;
-  background-position: 0% 100%;
+  background-image: url("../img/home/ddd9ab7d-ellipse-3.png");
+  background-size: 60%;
+  background-position: 18% 100%;
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
@@ -70,8 +70,9 @@ figure.mainImg {
 .footImg {
   position: absolute;
   bottom: 0%;
-  left: 15%;
+  left: -20px;
   z-index: -1;
+
 }
 .caption h2 {
   font-size: 40px;

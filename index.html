@@ -11,6 +11,7 @@
     />
     <title>Holiday</title>
 
+    <link rel="stylesheet" href="./assets/css/animate.css" />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/myStyle.css" />
@@ -70,17 +71,17 @@
         <div class="row p-5">
           <div class="col-lg-6">
             <figure class="mainImg">
-              <img src="./assets/img/home/man.png" class="w-100" alt="" />
-              <div class="footImg">
-                <img
-                  src="./assets/img/home/ddd9ab7d-ellipse-3.png"
-                  class="w-50"
-                  alt=""
-                />
+              <img
+                src="./assets/img/home/man.png"
+                class="w-100 wow slideInUp"
+                alt=""
+              />
+              <div class="footImg wow slideInLeft">
+                <img src="./assets/img/home/1.png" class="w-100" alt="" />
               </div>
             </figure>
           </div>
-          <div class="col-lg-6 d-flex align-items-center">
+          <div class="col-lg-6 d-flex align-items-center wow slideInDown">
             <div class="caption p-2">
               <h2 class="fw-bold text-white my-3">
                 Tour your dream destination with Holiday Package
@@ -104,9 +105,15 @@
     <!-- popular tours -->
     <section class="my-5">
       <div class="container">
-        <h2 class="my-5 fs-1 fw-bolder">Our Popular Tours</h2>
+        <h2 class="my-5 fs-1 fw-bolder wow slideInRight" data-wow-offset="200">
+          Our Popular Tours
+        </h2>
         <div class="row g-4 h-100">
-          <div class="card-container col-md-3">
+          <div
+            class="card-container col-md-3 wow slideInUp"
+            data-wow-delay="0.2s"
+            data-wow-offset="300"
+          >
             <div class="card border-0" role="button">
               <figure class="position-relative">
                 <img
@@ -121,7 +128,11 @@
             </div>
             <div class="my-4"></div>
           </div>
-          <div class="card-container col-md-3">
+          <div
+            class="card-container col-md-3 wow slideInDown"
+            data-wow-delay="0.2s"
+            data-wow-offset="300"
+          >
             <div class="card border-0" role="button">
               <figure class="position-relative">
                 <img
@@ -136,7 +147,11 @@
             </div>
             <div class="my-4"></div>
           </div>
-          <div class="card-container col-md-3">
+          <div
+            class="card-container col-md-3 wow slideInUp"
+            data-wow-delay="0.2s"
+            data-wow-offset="300"
+          >
             <div class="card border-0" role="button">
               <figure class="position-relative">
                 <img
@@ -151,7 +166,11 @@
             </div>
             <div class="my-4"></div>
           </div>
-          <div class="card-container col-md-3">
+          <div
+            class="card-container col-md-3 wow slideInDown"
+            data-wow-offset="300"
+            data-wow-delay="0.2s"
+          >
             <div class="card border-0" role="button">
               <figure class="position-relative">
                 <img
@@ -166,7 +185,11 @@
             </div>
             <div class="my-4"></div>
           </div>
-          <div class="card-container col-md-3">
+          <div
+            class="card-container col-md-3 wow slideInUp"
+            data-wow-offset="300"
+            data-wow-delay="0.2s"
+          >
             <div class="card border-0" role="button">
               <figure class="position-relative">
                 <img
@@ -181,7 +204,11 @@
             </div>
             <div class="my-4"></div>
           </div>
-          <div class="card-container col-md-3">
+          <div
+            class="card-container col-md-3 wow slideInDown"
+            data-wow-offset="300"
+            data-wow-delay="0.2s"
+          >
             <div class="card border-0" role="button">
               <figure class="position-relative">
                 <img
@@ -204,7 +231,10 @@
     <section class="my-5">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-lg-5 exploreImg position-relative overflow-hidden">
+          <div
+            class="col-lg-5 exploreImg position-relative overflow-hidden wow slideInLeft"
+            data-wow-offset="300"
+          >
             <figure>
               <img src="./assets/img/home/weman.png" class="w-100" alt="" />
             </figure>
@@ -213,7 +243,7 @@
             </figcaption>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6 wow slideInRight" data-wow-offset="300">
             <div class="inner">
               <h2 class="fs-1 fw-bolder">Why choose us 🙄</h2>
               <ul class="list-unstyled mt-3">
@@ -280,7 +310,10 @@
     <!--Featured Destinations -->
     <section class="my-5">
       <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
+        <div
+          class="d-flex align-items-center justify-content-between wow slideInRight"
+          data-wow-offset="300"
+        >
           <h2 class="my-5 fs-1 fw-bolder">Featured Destinations</h2>
           <button class="btn btnNav btn-outline-success py-2">
             <a
@@ -292,7 +325,7 @@
         </div>
 
         <div class="row g-3 mb-3">
-          <div class="col-md-7">
+          <div class="col-md-7 wow slideInDown" data-wow-offset="300">
             <div class="destinationDetails" role="button">
               <figure
                 class="position-relative imgHeight rounded-5 overflow-hidden"
@@ -312,7 +345,7 @@
             </div>
           </div>
 
-          <div class="col-md-5">
+          <div class="col-md-5 wow slideInRight" data-wow-offset="300">
             <div class="destinationDetails" role="button">
               <figure
                 class="position-relative imgHeight rounded-5 overflow-hidden"
@@ -334,7 +367,7 @@
         </div>
 
         <div class="row g-3">
-          <div class="col-md-5">
+          <div class="col-md-5 wow slideInLeft" data-wow-offset="300">
             <div class="destinationDetails" role="button">
               <figure
                 class="position-relative imgHeight rounded-5 overflow-hidden"
@@ -354,7 +387,7 @@
             </div>
           </div>
 
-          <div class="col-md-7">
+          <div class="col-md-7 wow slideInUp" data-wow-offset="300">
             <div class="destinationDetails" role="button">
               <figure
                 class="position-relative imgHeight rounded-5 overflow-hidden"
@@ -378,7 +411,11 @@
     </section>
 
     <!-- vedio -->
-    <section class="my-5">
+    <section
+      class="my-5 wow zoomIn"
+      data-wow-offset="300"
+      data-wow-delay="0.2s"
+    >
       <div class="container pt-5">
         <div>
           <iframe
@@ -551,9 +588,11 @@
       </div>
     </footer>
 
+    <!-- <script src="./assets/js/sweetalert2@11.js"></script> -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
-    <script src="./assets/js/sweetalert2@11.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+
     <script src="./assets/js/myMain.js"></script>
   </body>
 </html>

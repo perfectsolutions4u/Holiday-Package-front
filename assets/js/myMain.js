@@ -1,3 +1,7 @@
+// wow plugin
+new WOW().init();
+
+
 // make trip
 
 let checkInput = document.querySelectorAll(".js-check input");
