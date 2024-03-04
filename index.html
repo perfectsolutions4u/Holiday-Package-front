@@ -17,6 +17,156 @@
     <link rel="stylesheet" href="./assets/css/myStyle.css" />
   </head>
   <body>
+    <!-- //. sign up Popup -->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="signUp-popup login-register-popup" id="signUp-popup">
+      <div class="login-register-popup-wrap">
+        <div class="row no-gutters">
+          <div class="col-lg-6 signup flex-grow-1 align-self-center">
+            <div class="shape-thumb">
+              <img src="assets/img/others/signup-shape.png" alt="img" />
+            </div>
+            <form class="login-form-wrap">
+              <h4 class="text-center">Sign Up</h4>
+              <div class="single-input-wrap style-two d-flex">
+                <span class="single-input-title"
+                  ><i class="fa fa-user"></i
+                ></span>
+                <input
+                  class="form-control"
+                  name="name"
+                  value=""
+                  type="text"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="single-input-wrap style-two">
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  value=""
+                  placeholder="Email"
+                />
+                <span class="single-input-title"
+                  ><i class="fa fa-envelope"></i
+                ></span>
+              </div>
+              <div class="single-input-wrap style-two">
+                <input
+                  name="password"
+                  value=""
+                  class="form-control"
+                  type="password"
+                  placeholder="Password"
+                />
+                <span class="single-input-title"
+                  ><i class="fa fa-lock"></i
+                ></span>
+              </div>
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Remember me</span>
+              </label>
+              <div class="single-input-wrap style-two">
+                <button class="btn btn-yellow w-100">Sign Up</button>
+              </div>
+              <div class="sign-in-btn">
+                I already have an account.
+                <a class="text-decoration-none text-mainColor fw-bold" href="#"
+                  >Sign In</a
+                >
+              </div>
+              <div class="social-wrap">
+                <p>Or Continue With</p>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="fs-4 text-decoration-none nav-link d-inline"
+                      href="http://www.google.com"
+                      target="_blank"
+                      ><i class="fa-brands fa-google"></i
+                    ></a>
+                  </li>
+                  <!-- <li>
+                    <a class="twitter" href="#" target="_blank"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="pinterest" href="#" target="_blank"
+                      ><i class="fa fa-pinterest"></i
+                    ></a>
+                  </li> -->
+                </ul>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-6 login d-none flex-grow-1 align-self-center">
+            <div class="shape-thumb">
+              <img src="assets/img/others/signup-shape.png" alt="img" />
+            </div>
+            <form class="login-form-wrap">
+              <h4 class="text-center">Login</h4>
+
+              <div class="single-input-wrap style-two">
+                <input
+                  name="email"
+                  value=""
+                  class="form-control"
+                  type="email"
+                  placeholder="Email"
+                />
+                <span class="single-input-title"
+                  ><i class="fa fa-envelope"></i
+                ></span>
+              </div>
+              <div class="single-input-wrap style-two">
+                <input
+                  value=""
+                  name="password"
+                  class="form-control"
+                  type="password"
+                  placeholder="Password"
+                />
+                <span class="single-input-title"
+                  ><i class="fa fa-lock"></i
+                ></span>
+              </div>
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Remember me</span>
+              </label>
+              <div class="single-input-wrap style-two">
+                <button class="btn btn-yellow w-100">Login</button>
+              </div>
+              <div class="log-in-btn">
+                I already have an account.
+                <a class="text-decoration-none text-mainColor fw-bold" href="#"
+                  >Sign Up</a
+                >
+              </div>
+              <div class="social-wrap">
+                <p>Or Continue With</p>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="fs-4 text-decoration-none nav-link d-inline"
+                      href="http://www.google.com"
+                      target="_blank"
+                      ><i class="fa-brands fa-google"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //. sign up Popup End -->
+
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container">
@@ -57,11 +207,15 @@
           </ul>
         </div>
 
-        <button class="btn btn-yellow py-2">
-          <a class="navLink text-decoration-none" href="./make-trip.html"
-            >CUSTOMIZE TOUR</a
-          >
-        </button>
+        <a class="navLink text-decoration-none" href="./make-trip.html">
+          <button class="btn btn-yellow py-2">CUSTOMIZE TOUR</button>
+        </a>
+
+        <div class="notification">
+          <a class="signUp-btn ms-4 fs-3 nav-link">
+            <i class="fa fa-user-tie"></i>
+          </a>
+        </div>
       </div>
     </nav>
 
@@ -110,7 +264,7 @@
         </h2>
         <div class="row g-4 h-100">
           <div
-            class="card-container col-md-3 wow slideInUp"
+            class="card-container col-md-3 wow"
             data-wow-delay="0.2s"
             data-wow-offset="300"
           >
@@ -129,7 +283,7 @@
             <div class="my-4"></div>
           </div>
           <div
-            class="card-container col-md-3 wow slideInDown"
+            class="card-container col-md-3 wow"
             data-wow-delay="0.2s"
             data-wow-offset="300"
           >
@@ -148,7 +302,7 @@
             <div class="my-4"></div>
           </div>
           <div
-            class="card-container col-md-3 wow slideInUp"
+            class="card-container col-md-3 wow"
             data-wow-delay="0.2s"
             data-wow-offset="300"
           >
@@ -167,7 +321,7 @@
             <div class="my-4"></div>
           </div>
           <div
-            class="card-container col-md-3 wow slideInDown"
+            class="card-container col-md-3 wow"
             data-wow-offset="300"
             data-wow-delay="0.2s"
           >
@@ -186,7 +340,7 @@
             <div class="my-4"></div>
           </div>
           <div
-            class="card-container col-md-3 wow slideInUp"
+            class="card-container col-md-3 wow"
             data-wow-offset="300"
             data-wow-delay="0.2s"
           >
@@ -205,7 +359,7 @@
             <div class="my-4"></div>
           </div>
           <div
-            class="card-container col-md-3 wow slideInDown"
+            class="card-container col-md-3 wow"
             data-wow-offset="300"
             data-wow-delay="0.2s"
           >
@@ -435,7 +589,7 @@
     </section>
 
     <!-- contact -->
-    <section class="my-5">
+    <!-- <section class="my-5">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-lg-5">
@@ -578,21 +732,22 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <footer>
+    <!-- <footer>
       <div class="box container p-3 rounded-top-5">
         <p class="text-center fw-semibold">
           ALL COPYRIGHTS RESERVED BY: HOLIDAY PACKAGE
         </p>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- <script src="./assets/js/sweetalert2@11.js"></script> -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/wow.min.js"></script>
 
+    <!-- <script src="./assets/js/main.js"></script> -->
     <script src="./assets/js/myMain.js"></script>
   </body>
 </html>

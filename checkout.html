@@ -294,108 +294,35 @@
               </div>
             </div>
 
-            <!-- avgNight -->
-            <div class="row my-5 fs-5">
-              <div class="col-sm-4">
-                <div class="avgNight d-flex">
-                  <input
-                    type="radio"
-                    name="avgNight"
-                    id="avgNight1"
-                    class="w-20 me-3"
-                  />
-                  <label for="avgNight1">0-3 Days</label>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="avgNight d-flex">
-                  <input
-                    type="radio"
-                    name="avgNight"
-                    id="avgNight2"
-                    class="w-20 me-3"
-                  />
-                  <label for="avgNight2">4-7 Days</label>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="avgNight d-flex">
-                  <input
-                    type="radio"
-                    name="avgNight"
-                    id="avgNight3"
-                    class="w-20 me-3"
-                  />
-                  <label for="avgNight3">+ 7 Days</label>
-                </div>
-              </div>
-            </div>
-
-            <!-- accommodation -->
+            <!-- location name -->
             <div class="row my-5">
-              <h4 class="mb-3">Accommodation stars radio</h4>
-              <div class="col-sm-4">
-                <div class="accommodation d-flex">
-                  <input
-                    type="radio"
-                    name="accommodation"
-                    id="accommodation1"
-                    class="w-20 me-3"
-                  />
-                  <label for="accommodation1">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </label>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="accommodation d-flex">
-                  <input
-                    type="radio"
-                    name="accommodation"
-                    id="accommodation2"
-                    class="w-20 me-3"
-                  />
-                  <label for="accommodation2">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </label>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="accommodation d-flex">
-                  <input
-                    type="radio"
-                    name="accommodation"
-                    id="accommodation3"
-                    class="w-20 me-3"
-                  />
-                  <label for="accommodation3">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <!-- hotel name -->
-            <div class="row my-5">
-              <h4 class="mb-3">Write specific hotel name?</h4>
+              <h4 class="mb-3">Pick Up Location</h4>
               <div class="col-12">
-                <div class="specificHotel d-flex">
+                <div class="location d-flex">
                   <input
                     type="text"
-                    name="specificHotel"
-                    id="specificHotel"
+                    name="location"
+                    id="location"
                     class="form-control w-100 p-2"
-                    placeholder="Write specific hotel name?..."
+                    placeholder="Pick Up Location..."
                   />
+                </div>
+              </div>
+            </div>
+            <!-- Additional Information name -->
+            <div class="row my-5">
+              <h4 class="mb-3">Additional Information</h4>
+              <p class="text-black">
+                Order note <span class="text-muted">(optional)</span>
+              </p>
+              <div class="col-12">
+                <div class="">
+                  <textarea
+                    name="addInfo"
+                    id="addInfo"
+                    placeholder="Note about your order ........"
+                    class="form-control w-100"
+                  ></textarea>
                 </div>
               </div>
             </div>
@@ -423,7 +350,7 @@
                   value="cash"
                   id="cash"
                 />
-                <label for="cash">Cash On Delivery</label>
+                <label for="cash">Cash Uppon Arrival</label>
               </div>
               <div class="mt-2">
                 <input

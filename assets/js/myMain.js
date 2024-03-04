@@ -1,6 +1,38 @@
-// wow plugin
-new WOW().init();
+// select 
+$('.card-container:nth-child(even)').addClass( 'slideInDown')
+$('.card-container:nth-child(odd)').addClass( 'slideInUp')
 
+// sign up  -  login 
+
+    let bodyOvrelay = $("#body-overlay");
+    let singupPopup = $("#signUp-popup");
+
+    $(document).on("click", "#body-overlay", function (e) {
+      e.preventDefault();
+      bodyOvrelay.removeClass("active");
+      singupPopup.removeClass("active");
+    });
+    $(document).on("click", ".signUp-btn", function (e) {
+      e.preventDefault();
+      singupPopup.addClass("active");
+      bodyOvrelay.addClass("active");
+    });
+    
+    
+    // $('.signUp-btn').on('click' , function(){
+      
+      // $('.login-register-popup').toggleClass('active')
+  
+    // })
+
+$('.sign-in-btn').on('click', function(){
+  $('.signup').addClass('d-none');
+  $('.login').removeClass('d-none');
+})
+$('.log-in-btn').on('click', function(){
+  $('.signup').removeClass('d-none');
+  $('.login').addClass('d-none');
+})
 
 // make trip
 
@@ -20,7 +52,9 @@ for (let i = 0; i < checkInput.length; i++) {
 
 if (submitBtn) {
   submitBtn.addEventListener("click", function () {
+    // console.log('clicked');
     if (element.getAttribute("data-value") == "true") {
+      // console.log('ahmed');
       $("#main").addClass("d-none");
       $("#secondSec").removeClass("d-none");
     } else {
@@ -274,3 +308,6 @@ $('.single-destinations-list').click(function () {
   location.href = '../../tour-details.html'
 })
 
+
+// // wow plugin
+new WOW().init();
