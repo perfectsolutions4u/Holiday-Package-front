@@ -770,7 +770,7 @@
     /*--------------------------------
             preloader
         ---------------------------------*/
-    var preLoder = $("#preloader");
+    let preLoder = $("#preloader");
     preLoder.fadeOut(1000);
 
     /*--------------------------------

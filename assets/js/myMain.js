@@ -2,6 +2,26 @@
 $('.card-container:nth-child(even)').addClass( 'slideInDown')
 $('.card-container:nth-child(odd)').addClass( 'slideInUp')
 
+
+// // loader
+$(window).on("load", function () {
+  /*--------------------------------
+          preloader
+      ---------------------------------*/
+  let preLoder = $("#preloader");
+  preLoder.fadeOut(1000);
+
+  /*--------------------------------
+          Cancel Preloader
+      ---------------------------------*/
+  $(document).on("click", ".cancel-preloader a", function (e) {
+    e.preventDefault();
+    $("#preloader").fadeOut(2000);
+  });
+});
+
+
+
 // sign up  -  login 
 
     let bodyOvrelay = $("#body-overlay");
