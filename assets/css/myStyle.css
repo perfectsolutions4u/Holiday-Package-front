@@ -243,7 +243,7 @@ input + label {
 
 #makeTrip #secondSec button,
 #makeTrip #lastSec button {
-  padding: 5px 10px;
+  margin-inline: 5px;
 }
 
 #makeTrip input:not([type="range"]) {
@@ -444,5 +444,84 @@ input + label {
   }
   .login-form-wrap {
     margin: 10px;
+  }
+}
+/* about slider */
+#carousel {
+  height: 300px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+#carousel .shadow {
+  -moz-box-shadow: 0px 16px 26px #888888;
+  -webkit-box-shadow: 0px 16px 26px #888888;
+  box-shadow: 0px 16px 26px #888888;
+}
+
+#carousel .slide {
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#carousel .slide :hover img {
+  margin-top: 2px;
+  transform: scale(1.2);
+}
+#carousel .slide :hover span {
+  bottom: 0;
+}
+
+#carousel .slide img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+#carousel .slide div {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#carousel .slide span {
+  background-color: #00000071;
+  color: var(--mainColor);
+  font-size: 0.8em;
+  font-family: sans-serif;
+  position: absolute;
+  padding: 5px;
+  width: 100%;
+  bottom: -100%;
+  left: 0;
+  z-index: 99;
+  transition: all 1s;
+}
+#carousel .slide span a,
+#carousel .slide span a i {
+  color: white;
+  transition: all 1s;
+}
+#carousel .slide span a:hover i {
+  color: var(--mainColor);
+  transform: scale(2);
+}
+#carousel .navigate-left,
+#carousel .navigate-right {
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  /* visibility: hidden; */
+}
+
+@media screen and (max-width: 500px) {
+  #carousel .navigate-right,
+  #carousel .navigate-left {
+    visibility: visible;
   }
 }

@@ -24,18 +24,18 @@ $(window).on("load", function () {
 
 // sign up  -  login 
 
-    let bodyOvrelay = $("#body-overlay");
-    let singupPopup = $("#signUp-popup");
+    // let bodyOvrelay = $("#body-overlay");
+    // let singupPopup = $("#signUp-popup");
 
     $(document).on("click", "#body-overlay", function (e) {
       e.preventDefault();
-      bodyOvrelay.removeClass("active");
-      singupPopup.removeClass("active");
+      $("#body-overlay").removeClass("active");
+      $("#signUp-popup").removeClass("active");
     });
     $(document).on("click", ".signUp-btn", function (e) {
       e.preventDefault();
-      singupPopup.addClass("active");
-      bodyOvrelay.addClass("active");
+      $("#signUp-popup").addClass("active");
+      $("#body-overlay").addClass("active");
     });
     
     
@@ -330,4 +330,8 @@ $('.single-destinations-list').click(function () {
 
 
 // // wow plugin
-new WOW().init();
+
+document.addEventListener("DOMContentLoaded", function () {
+  new WOW().init();
+});
+
