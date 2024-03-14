@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
   var carousel = $("#carousel").slidingCarousel({
-    squeeze: 220,
+    squeeze: 250,
   });
 });
 

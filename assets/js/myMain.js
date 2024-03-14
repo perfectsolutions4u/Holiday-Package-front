@@ -315,18 +315,18 @@ $('.count').click(function(){
 
 
 // nasr
-$('.card').click(function () {
-  location.href = '../../tour-details.html'
-})
+// $('.card').click(function () {
+//   location.href = '../../tour-details.html'
+// })
 
-$('.destinationDetails').click(function () {
-  location.href = '../../destination-list.html'
+// $('.destinationDetails').click(function () {
+//   location.href = '../../destination-list.html'
 
-})
+// })
 
-$('.single-destinations-list').click(function () {
-  location.href = '../../tour-details.html'
-})
+// $('.single-destinations-list').click(function () {
+//   location.href = '../../tour-details.html'
+// })
 
 
 // // wow plugin
