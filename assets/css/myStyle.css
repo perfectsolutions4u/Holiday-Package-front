@@ -53,12 +53,15 @@ button:hover a.navLink {
 /* mainSection */
 
 .main {
-  background-color: #366d66;
+  /* background-color: #366d66; */
+  background: url("../img/14.jpeg");
   margin-top: 90px;
   min-height: 75vh;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  background-size: cover;
 }
+
 figure.mainImg {
   background-image: url("../img/home/ddd9ab7d-ellipse-3.png");
   background-size: 60%;
@@ -91,6 +94,7 @@ figure.mainImg {
 
 .card-container {
   display: flex;
+  justify-content: center;
 }
 .card-container:nth-child(even) {
   flex-direction: column-reverse;
@@ -524,4 +528,26 @@ input + label {
   #carousel .navigate-left {
     visibility: visible;
   }
+}
+.navbar-toggler {
+  padding: 5px;
+  line-height: 25px;
+  /* border: none; */
+}
+.navbar-toggler-icon {
+  background-image: unset;
+}
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  color: var(--hoverColor);
+  box-shadow: unset;
+}
+
+/* slideToggel */
+.activeNone {
+  display: none;
+}
+
+.single-blog .thumb {
+  height: 250px;
 }
