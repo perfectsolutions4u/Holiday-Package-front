@@ -39,7 +39,11 @@ Version: 1.0.0
     ## Button
     ## Section Title
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900|Poppins:200,300,300i,400,400i,500,600,700,800&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900|Poppins:200,300,300i,400,400i,500,600,700,800&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Recursive:wght@300..1000&display=swap');
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -48,8 +52,8 @@ Version: 1.0.0
   --main-color-two: #071c55;
   --heading-color: #071c55;
   --paragraph-color: #666;
-  --heading-font: "Playfair Display", serif;
-  --body-font: "Poppins", sans-serif;
+  --heading-font: "Permanent Marker", cursive;
+  --body-font:  "Permanent Marker", cursive;
   --body-font-size: 15px;
   --body-font-width: 400;
   --body-line-height: 32px;

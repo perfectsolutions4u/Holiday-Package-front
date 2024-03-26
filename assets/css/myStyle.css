@@ -1,6 +1,10 @@
 :root {
   --mainColor: #366d66;
-  --hoverColor: #f5757d;
+  /* --hoverColor: #f5757d; */
+  --hoverColor: #1abcac;
+}
+body {
+  font-family: "Permanent Marker", cursive;
 }
 .text-mainColor {
   color: var(--mainColor);
@@ -192,6 +196,13 @@ footer .box {
   background-color: transparent;
   color: var(--mainColor);
   border: 1px solid var(--mainColor);
+}
+
+.btn.btn-yellow,
+.bg-mainColor {
+  filter: drop-shadow(2px 1px 1px black);
+  background-color: #feffff;
+  color: #15452a;
 }
 
 /* make trip */
@@ -451,6 +462,11 @@ input + label {
   }
 }
 /* about slider */
+.single-team {
+  max-width: 300px;
+  max-height: 200px;
+}
+
 #carousel {
   height: 300px;
   width: 100%;
@@ -487,10 +503,10 @@ input + label {
 
 #carousel .slide div {
   position: relative;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 5px;
   height: 100%;
-  width: 100%;
+  width: 105%;
 }
 
 #carousel .slide span {
@@ -500,9 +516,9 @@ input + label {
   font-family: sans-serif;
   position: absolute;
   padding: 5px;
-  width: 100%;
+  width: 102%;
   bottom: -100%;
-  left: 0;
+  left: 5px;
   z-index: 99;
   transition: all 1s;
 }
