@@ -567,3 +567,95 @@ input + label {
 .single-blog .thumb {
   height: 250px;
 }
+
+.boxVideo {
+  width: 60%;
+  height: 350px;
+}
+
+@media screen and (max-width: 767px) {
+  .boxVideo {
+    width: 100%;
+  }
+}
+/* .boxVedio #player #movie_player .ytp-chrome-top {
+  display: none !important;
+} */
+
+/* about */
+
+.intro-area .aboutContent:hover {
+  & h3,
+  & p {
+    color: var(--mainColor) !important;
+  }
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* about feedback */
+.feedback .container-fluid {
+  background-image: url(../img/home/panner.jpeg);
+}
+.feedback .carousel-indicators {
+  position: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-block: 35px;
+}
+
+.feedback .carousel-indicators .active {
+  box-shadow: 3px 3px 2px 2px var(--mainColor);
+  opacity: 1;
+}
+
+.feedback .carousel-indicators [data-bs-target] {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  border: 0;
+  transition: all 1.6s ease;
+
+  background-size: cover;
+  background-position: 50%;
+  margin: -25px;
+
+  &:hover {
+    transform: rotate(0) scale(1.3);
+  }
+}
+.feedback .carousel-indicators [data-bs-target]:first-child {
+  background-image: url("../img/team/man1.jpg");
+}
+.feedback .carousel-indicators [data-bs-target]:nth-child(2) {
+  background-image: url("../img/team/weman1.jpg");
+}
+.feedback .carousel-indicators [data-bs-target]:nth-child(3) {
+  background-image: url("../img/team/man2.jpg");
+}
+.feedback .carousel-indicators [data-bs-target]:nth-child(4) {
+  background-image: url("../img/team/weman2.jpg");
+}
+@media screen and (max-width: 992px) {
+  .feedback #carouselExampleIndicators .row {
+    flex-direction: column-reverse;
+  }
+  .feedback .carousel-indicators {
+    flex-direction: row;
+  }
+}
+.feedback .carousel-item {
+  background: #eee url(../img/bg/7.png);
+  background-position: 35% 135%;
+  background-repeat: no-repeat;
+  padding-block: 50px;
+}
+.feedback .carousel-item .userImg {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
