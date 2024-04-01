@@ -545,3 +545,8 @@ $(document).ready(function () {
     animate: 250,
   };
 })(jQuery);
+
+
+$(".videoBox").on("click", function () {
+  $(".ytubeIcon").toggleClass("d-none");
+});

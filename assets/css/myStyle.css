@@ -9,6 +9,9 @@ body {
 .text-mainColor {
   color: var(--mainColor);
 }
+.bgMainColor {
+  background-color: var(--mainColor);
+}
 /* navbar */
 a.navbar-brand {
   width: 100px;
@@ -568,7 +571,7 @@ input + label {
   height: 250px;
 }
 
-.boxVideo {
+/* .boxVideo {
   width: 60%;
   height: 350px;
 }
@@ -577,12 +580,26 @@ input + label {
   .boxVideo {
     width: 100%;
   }
-}
+} */
 /* .boxVedio #player #movie_player .ytp-chrome-top {
   display: none !important;
 } */
 
 /* about */
+
+.ytp-impression-link,
+.ytp-chrome-top {
+  display: none;
+}
+
+.ytubeIcon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
 
 .intro-area .aboutContent:hover {
   & h3,
@@ -658,4 +675,12 @@ input + label {
   height: 70px;
   border-radius: 50%;
   border: 2px solid #fff;
+}
+
+.single-destination-grid .details .tp-review-meta {
+  position: unset;
+  transform: translateX(0%);
+}
+.single-destination-grid .details .title {
+  margin-block: 20px;
 }

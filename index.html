@@ -603,22 +603,29 @@
 
     <!-- vedio -->
     <section
-      class="my-5 wow zoomIn"
+      class="my-5 pb-5 wow zoomIn"
       data-wow-offset="300"
       data-wow-delay="0.2s"
     >
-      <div class="container py-5">
-        <div class="boxVideo mx-auto">
-          <iframe
-            class="rounded-5 w-100 h-100"
-            frameborder="0"
-            allowfullscreen=""
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            title="Video Placeholder"
-            src="https://www.youtube.com/embed/XHOmBV4js_E?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fholidayshub.perfectsolutions4u.com&amp;widgetid=1"
-            id="widget2"
-            __idm_id__="3956737"
-          ></iframe>
+      <div class="container">
+        <div class="videoBox position-relative pt-5">
+          <video
+            src="./assets/img/cinematic camping video [ nature video 4k ].mp4"
+            poster="./assets/img/12.jpeg"
+            muted
+            controls
+            height="500px"
+            class="rounded-4 w-100 bg-dark rounded-5"
+          ></video>
+
+          <div
+            class="bgMainColor ytubeIcon d-flex justify-content-center align-items-center rounded-4 cPointer"
+          >
+            <i
+              class="fa fa-caret-right text-white fs-2 fa-rotate-by"
+              style="--fa-rotate-angle: -45deg"
+            ></i>
+          </div>
         </div>
       </div>
     </section>
