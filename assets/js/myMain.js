@@ -549,4 +549,6 @@ $(document).ready(function () {
 
 $(".videoBox").on("click", function () {
   $(".ytubeIcon").toggleClass("d-none");
+
 });
+

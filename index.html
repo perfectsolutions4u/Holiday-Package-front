@@ -609,22 +609,56 @@
     >
       <div class="container">
         <div class="videoBox position-relative pt-5">
-          <video
-            src="./assets/img/cinematic camping video [ nature video 4k ].mp4"
-            poster="./assets/img/12.jpeg"
-            muted
-            controls
-            height="500px"
-            class="rounded-4 w-100 bg-dark rounded-5"
-          ></video>
+          <img
+            src="./assets/img/11.jpeg"
+            class="w-100 rounded-4"
+            alt="poster video"
+          />
 
-          <div
-            class="bgMainColor ytubeIcon d-flex justify-content-center align-items-center rounded-4 cPointer"
-          >
-            <i
-              class="fa fa-caret-right text-white fs-2 fa-rotate-by"
-              style="--fa-rotate-angle: -45deg"
-            ></i>
+          <div class="bgMainColor ytubeIcon rounded-4 cPointer">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <i class="fa fa-caret-right fs-2 text-white"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="videoBox position-relative pt-5">
+                  <video
+                    src="./assets/img/cinematic camping video [ nature video 4k ].mp4"
+                    autoplay
+                    muted
+                    controls
+                    width="100%"
+                    class="rounded-4 w-100 bg-dark rounded-5"
+                  ></video>
+
+                  <div
+                    class="bgMainColor ytubeIcon d-flex justify-content-center align-items-center rounded-4 cPointer"
+                  >
+                    <i
+                      class="fa fa-caret-right text-white fs-2"
+                      style="--fa-rotate-angle: -45deg"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

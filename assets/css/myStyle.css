@@ -593,12 +593,12 @@ input + label {
 }
 
 .ytubeIcon {
-  width: 80px;
-  height: 80px;
+  color: #fff;
+  padding: 10px;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%);
 }
 
 .intro-area .aboutContent:hover {
@@ -683,4 +683,8 @@ input + label {
 }
 .single-destination-grid .details .title {
   margin-block: 20px;
+}
+
+.modal-content {
+  background-color: transparent;
 }
