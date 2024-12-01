@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/home/logo.png"
+      type="image/x-icon"
+    />
+    <title>Holiday</title>
+
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/myStyle.css" />
+  </head>
+  <body>
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-inner">
+        <div class="spinner">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- preloader area end -->
+
+    <!-- //. sign up Popup -->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="signUp-popup login-register-popup" id="signUp-popup">
+      <div class="login-register-popup-wrap">
+        <div class="row no-gutters">
+          <div class="col-lg-6 signup flex-grow-1 align-self-center">
+            <div class="shape-thumb">
+              <img src="assets/img/others/signup-shape.png" alt="img" />
+            </div>
+            <form class="login-form-wrap">
+              <h4 class="text-center">Sign Up</h4>
+              <div class="single-input-wrap style-two d-flex">
+                <span class="single-input-title"
+                  ><i class="fa fa-user"></i
+                ></span>
+                <input
+                  class="form-control"
+                  name="name"
+                  value=""
+                  type="text"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="single-input-wrap style-two">
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  value=""
+                  placeholder="Email"
+                />
+                <span class="single-input-title"
+                  ><i class="fa fa-envelope"></i
+                ></span>
+              </div>
+              <div class="single-input-wrap style-two">
+                <input
+                  name="password"
+                  value=""
+                  class="form-control"
+                  type="password"
+                  placeholder="Password"
+                />
+                <span class="single-input-title"
+                  ><i class="fa fa-lock"></i
+                ></span>
+              </div>
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Remember me</span>
+              </label>
+              <div class="single-input-wrap style-two">
+                <button class="btn btn-yellow w-100">Sign Up</button>
+              </div>
+              <div class="sign-in-btn">
+                I already have an account.
+                <a class="text-decoration-none text-mainColor fw-bold" href="#"
+                  >Sign In</a
+                >
+              </div>
+              <div class="social-wrap">
+                <p>Or Continue With</p>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="fs-4 text-decoration-none nav-link d-inline"
+                      href="http://www.google.com"
+                      target="_blank"
+                      ><i class="fa-brands fa-google"></i
+                    ></a>
+                  </li>
+                  <!-- <li>
+                    <a class="twitter" href="#" target="_blank"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="pinterest" href="#" target="_blank"
+                      ><i class="fa fa-pinterest"></i
+                    ></a>
+                  </li> -->
+                </ul>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-6 login d-none flex-grow-1 align-self-center">
+            <div class="shape-thumb">
+              <img src="assets/img/others/signup-shape.png" alt="img" />
+            </div>
+            <form class="login-form-wrap">
+              <h4 class="text-center">Login</h4>
+
+              <div class="single-input-wrap style-two">
+                <input
+                  name="email"
+                  value=""
+                  class="form-control"
+                  type="email"
+                  placeholder="Email"
+                />
+                <span class="single-input-title"
+                  ><i class="fa fa-envelope"></i
+                ></span>
+              </div>
+              <div class="single-input-wrap style-two">
+                <input
+                  value=""
+                  name="password"
+                  class="form-control"
+                  type="password"
+                  placeholder="Password"
+                />
+                <span class="single-input-title"
+                  ><i class="fa fa-lock"></i
+                ></span>
+              </div>
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Remember me</span>
+              </label>
+              <div class="single-input-wrap style-two">
+                <button class="btn btn-yellow w-100">Login</button>
+              </div>
+              <div class="log-in-btn">
+                I already have an account.
+                <a class="text-decoration-none text-mainColor fw-bold" href="#"
+                  >Sign Up</a
+                >
+              </div>
+              <div class="social-wrap">
+                <p>Or Continue With</p>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="fs-4 text-decoration-none nav-link d-inline"
+                      href="http://www.google.com"
+                      target="_blank"
+                      ><i class="fa-brands fa-google"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //. sign up Popup End -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/img/home/logo.png"
+            class="w-75"
+            alt="Holiday logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-sliders fs-3"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item me-3">
+              <a class="nav-link" href="index.html">HomePage</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="./destination-list.html">Lets travel</a>
+            </li>
+
+            <li class="nav-item me-3">
+              <a class="nav-link" href="./about.html">About us</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="./contact.html">Contact us</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="./blog02.html">Blogs</a>
+            </li>
+          </ul>
+
+          <div class="notification d-flex justify-content-between mt-3">
+            <a class="navLink text-decoration-none" href="./make-trip.html">
+              <button class="btn btn-yellow py-2">
+                <span>CUSTOMIZE TOUR</span>
+              </button>
+            </a>
+            <a class="signUp-btn ms-4 fs-3 nav-link">
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main section -->
+    <section class="main position-relative">
+      <div class="container">
+        <div class="row p-5">
+          <div class="col-lg-6">
+            <figure class="mainImg">
+              <img
+                src="./assets/img/home/man.png"
+                class="w-100 wow slideInUp"
+                alt=""
+              />
+              <div class="footImg wow slideInLeft">
+                <img src="./assets/img/home/1.png" class="w-100" alt="" />
+              </div>
+            </figure>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center wow slideInDown">
+            <div class="caption p-2">
+              <h2 class="fw-bold text-white my-3">
+                Tour your dream destination with Holiday Package
+              </h2>
+
+              <button class="btn btn-outline-warning py-2 mt-5">
+                <a class="navLink text-decoration-none" href="./make-trip.html"
+                  >Plan a trip</a
+                >
+                <i class="fa-solid fa-angle-right ms-3"></i>
+              </button>
+            </div>
+            <figure class="mapImg">
+              <img src="./assets/img/home/2.png" alt="" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- popular tours -->
+    <section class="my-5">
+      <div class="container">
+        <h2 class="my-5 fs-1 fw-bolder wow slideInRight" data-wow-offset="200">
+          Our Popular Tours
+        </h2>
+        <div class="row g-4 h-100">
+          <div
+            class="card-container col-md-3 wow"
+            data-wow-delay="0.2s"
+            data-wow-offset="300"
+          >
+            <div class="card border-0" role="button">
+              <a href="./tour-details.html">
+                <figure class="position-relative">
+                  <img
+                    src="./assets/img/home/card1.png"
+                    class="w-100"
+                    alt="tour img"
+                  />
+                  <figcaption class="position-absolute bottom-0 m-3 text-white">
+                    <h4>Furka Pass, Obergoms</h4>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="my-4"></div>
+          </div>
+          <div
+            class="card-container col-md-3 wow"
+            data-wow-delay="0.2s"
+            data-wow-offset="300"
+          >
+            <div class="card border-0" role="button">
+              <a href="./tour-details.html">
+                <figure class="position-relative">
+                  <img
+                    src="./assets/img/home/card1.png"
+                    class="w-100"
+                    alt="tour img"
+                  />
+                  <figcaption class="position-absolute bottom-0 m-3 text-white">
+                    <h4>Furka Pass, Obergoms</h4>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="my-4"></div>
+          </div>
+          <div
+            class="card-container col-md-3 wow"
+            data-wow-delay="0.2s"
+            data-wow-offset="300"
+          >
+            <div class="card border-0" role="button">
+              <a href="./tour-details.html">
+                <figure class="position-relative">
+                  <img
+                    src="./assets/img/home/card1.png"
+                    class="w-100"
+                    alt="tour img"
+                  />
+                  <figcaption class="position-absolute bottom-0 m-3 text-white">
+                    <h4>Furka Pass, Obergoms</h4>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="my-4"></div>
+          </div>
+          <div
+            class="card-container col-md-3 wow"
+            data-wow-offset="300"
+            data-wow-delay="0.2s"
+          >
+            <div class="card border-0" role="button">
+              <a href="./tour-details.html">
+                <figure class="position-relative">
+                  <img
+                    src="./assets/img/home/card1.png"
+                    class="w-100"
+                    alt="tour img"
+                  />
+                  <figcaption class="position-absolute bottom-0 m-3 text-white">
+                    <h4>Furka Pass, Obergoms</h4>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="my-4"></div>
+          </div>
+          <div
+            class="card-container col-md-3 wow"
+            data-wow-offset="300"
+            data-wow-delay="0.2s"
+          >
+            <div class="card border-0" role="button">
+              <a href="./tour-details.html">
+                <figure class="position-relative">
+                  <img
+                    src="./assets/img/home/card1.png"
+                    class="w-100"
+                    alt="tour img"
+                  />
+                  <figcaption class="position-absolute bottom-0 m-3 text-white">
+                    <h4>Furka Pass, Obergoms</h4>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="my-4"></div>
+          </div>
+          <div
+            class="card-container col-md-3 wow"
+            data-wow-offset="300"
+            data-wow-delay="0.2s"
+          >
+            <div class="card border-0" role="button">
+              <a href="./tour-details.html">
+                <figure class="position-relative">
+                  <img
+                    src="./assets/img/home/card1.png"
+                    class="w-100"
+                    alt="tour img"
+                  />
+                  <figcaption class="position-absolute bottom-0 m-3 text-white">
+                    <h4>Furka Pass, Obergoms</h4>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="my-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--why choise us -->
+    <section class="my-5">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div
+            class="col-lg-5 exploreImg position-relative overflow-hidden wow slideInLeft"
+            data-wow-offset="300"
+          >
+            <figure>
+              <img src="./assets/img/home/weman.png" class="w-100" alt="" />
+            </figure>
+            <figcaption class="imgPosition">
+              <img src="./assets/img/home/1.png" class="w-100" alt="" />
+            </figcaption>
+          </div>
+
+          <div class="col-lg-6 wow slideInRight" data-wow-offset="300">
+            <div class="inner">
+              <h2 class="fs-1 fw-bolder">Why choose us 🙄</h2>
+              <ul class="list-unstyled mt-3">
+                <li class="d-flex mb-2 text-wrap">
+                  <div class="icon">
+                    <img
+                      src="./assets/img/home/24eead96-group-76.png"
+                      class="w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="desc">
+                    <h4 class="mb-1 fs-3">Unique destination</h4>
+                    <p class="text-muted">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="d-flex mb-2 text-wrap">
+                  <div class="icon">
+                    <img
+                      src="./assets/img/home/0c5a143f-group-762.png"
+                      class="w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="desc">
+                    <h4 class="mb-1 fs-3">Worth of money</h4>
+                    <p class="text-muted">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="d-flex mb-2 text-wrap">
+                  <div class="icon">
+                    <img
+                      src="./assets/img/home/a48ac2f6-group-763.png"
+                      class="w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="desc">
+                    <h4 class="mb-1 fs-3">Wonderful places</h4>
+                    <p class="text-muted">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Featured Destinations -->
+    <section class="my-5">
+      <div class="container">
+        <div
+          class="d-flex align-items-center justify-content-between wow slideInRight"
+          data-wow-offset="300"
+        >
+          <h2 class="my-5 fs-1 fw-bolder">Featured Destinations</h2>
+          <button class="btn btnNav btn-outline-success py-2">
+            <a
+              class="navLink text-decoration-none"
+              href="./destination-list.html"
+              >veiw all <i class="fa-solid fa-angle-right ms-3"></i
+            ></a>
+          </button>
+        </div>
+
+        <div class="row g-3 mb-3">
+          <div class="col-md-7 wow slideInDown" data-wow-offset="300">
+            <div class="destinationDetails" role="button">
+              <a href="./destination-details.html">
+                <figure
+                  class="position-relative imgHeight rounded-5 overflow-hidden"
+                >
+                  <img
+                    src="./assets/img/home/island-3542290_1280.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                  <figcaption
+                    class="layer bg-white border-1 rounded-5 py-2 px-4 text-center fs-3"
+                  >
+                    <i class="fa-solid fa-location-dot me-2"></i>
+                    <span class="fs-5">Isalnd</span>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-5 wow slideInRight" data-wow-offset="300">
+            <div class="destinationDetails" role="button">
+              <a href="./destination-details.html">
+                <figure
+                  class="position-relative imgHeight rounded-5 overflow-hidden"
+                >
+                  <img
+                    src="./assets/img/home/mystery-1599527_1920.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                  <figcaption
+                    class="layer bg-white border-1 rounded-5 text-center py-2 px-4 fs-3"
+                  >
+                    <i class="fa-solid fa-location-dot me-2"></i>
+                    <span class="fs-5">Death isalnd</span>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-5 wow slideInLeft" data-wow-offset="300">
+            <div class="destinationDetails" role="button">
+              <a href="./destination-details.html">
+                <figure
+                  class="position-relative imgHeight rounded-5 overflow-hidden"
+                >
+                  <img
+                    src="./assets/img/home/fayoum1.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                  <figcaption
+                    class="layer bg-white border-1 rounded-5 py-2 px-4 text-center fs-3"
+                  >
+                    <i class="fa-solid fa-location-dot me-2"></i>
+                    <span class="fs-5">Fayoum</span>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-7 wow slideInUp" data-wow-offset="300">
+            <div class="destinationDetails" role="button">
+              <a href="./destination-details.html">
+                <figure
+                  class="position-relative imgHeight rounded-5 overflow-hidden"
+                >
+                  <img
+                    src="./assets/img/home/bagan-1137015_1280.jpg"
+                    class="w-100 h-100"
+                    alt=""
+                  />
+                  <figcaption
+                    class="layer bg-white border-1 rounded-5 text-center py-2 px-4 fs-3"
+                  >
+                    <i class="fa-solid fa-location-dot me-2"></i>
+                    <span class="fs-5">south africa</span>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- vedio -->
+    <section
+      class="my-5 pb-5 wow zoomIn"
+      data-wow-offset="300"
+      data-wow-delay="0.2s"
+    >
+      <div class="container">
+        <div class="videoBox position-relative pt-5">
+          <img
+            src="./assets/img/11.jpeg"
+            class="w-100 rounded-4"
+            alt="poster video"
+          />
+
+          <div class="bgMainColor ytubeIcon rounded-4 cPointer">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <i class="fa fa-caret-right fs-2 text-white"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="videoBox position-relative pt-5">
+                  <video
+                    src="./assets/img/cinematic camping video [ nature video 4k ].mp4"
+                    autoplay
+                    muted
+                    controls
+                    width="100%"
+                    class="rounded-4 w-100 bg-dark rounded-5"
+                  ></video>
+
+                  <div
+                    class="bgMainColor ytubeIcon d-flex justify-content-center align-items-center rounded-4 cPointer"
+                  >
+                    <i
+                      class="fa fa-caret-right text-white fs-2"
+                      style="--fa-rotate-angle: -45deg"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="my-5">
+      <div class="container">
+        <div class="row justify-content-between mt-3">
+          <div class="col-lg-4">
+            <figure class="w-25">
+              <img
+                src="./assets/img/home/logo.png"
+                class="w-100"
+                alt="holiday logo"
+              />
+            </figure>
+            <figcaption>
+              <p class="text-muted my-2">
+                We Are One Of The Prominent Travel Agencies That You Can Find
+                Around, Arranging More Than 150 Tour Inside Egypt. We Arrange
+                Exceptional Tours Based On Your Personal Preference To Provide
+                The Best Experience For You. Join Us To Make Your Vacation Worth
+                Going.
+              </p>
+            </figcaption>
+            <div class="icons my-4">
+              <ul
+                class="list-unstyled d-flex align-items-center justify-content-evenly w-75"
+              >
+                <li
+                  class="box-icon rounded-circle d-flex align-items-center justify-content-center"
+                >
+                  <a
+                    href="http://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-black"
+                  >
+                    <i class="fa-brands text-white fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li
+                  class="box-icon rounded-circle d-flex align-items-center justify-content-center"
+                >
+                  <a
+                    href="http://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-black"
+                  >
+                    <i class="fa-brands text-white fa-twitter"></i>
+                  </a>
+                </li>
+                <li
+                  class="box-icon rounded-circle d-flex align-items-center justify-content-center"
+                >
+                  <a
+                    href="http://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-black"
+                  >
+                    <i class="fa-brands text-white fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li
+                  class="box-icon rounded-circle d-flex align-items-center justify-content-center"
+                >
+                  <a
+                    href="http://youtube.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-black"
+                  >
+                    <i class="fa-brands text-white fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <h4 class="fw-bold">Informations</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a
+                      class="webLinks text-decoration-none fs-5"
+                      href="./about.html"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="webLinks text-decoration-none fs-5"
+                      href="./blog02.html"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a class="webLinks text-decoration-none fs-5" href="#">
+                      Testimonial
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <h4 class="fw-bold">Helpful Links</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a class="webLinks text-decoration-none fs-5">Offers</a>
+                  </li>
+                  <li class="mb-2">
+                    <a class="webLinks text-decoration-none fs-5">Support</a>
+                  </li>
+                  <li class="mb-2">
+                    <a class="webLinks text-decoration-none fs-5">
+                      Terms And Condition
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a class="webLinks text-decoration-none fs-5">Privacy</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <h4 class="fw-bold">Our Services</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a class="webLinks text-decoration-none fs-5">Day Tours</a>
+                  </li>
+                  <li class="mb-2">
+                    <a class="webLinks text-decoration-none fs-5"
+                      >Multi-Days Tours</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a class="webLinks text-decoration-none fs-5">
+                      Nile Cruises Tours
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="box container-fluid p-3 rounded-top-5">
+        <p class="text-center fw-semibold">
+          ALL COPYRIGHTS RESERVED BY: HOLIDAY PACKAGE
+        </p>
+      </div>
+    </footer>
+
+    <!-- <script src="./assets/js/sweetalert2@11.js"></script> -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+
+    <!-- <script src="./assets/js/main.js"></script> -->
+    <script src="./assets/js/myMain.js"></script>
+  </body>
+</html>

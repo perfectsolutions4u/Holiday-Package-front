@@ -1,3 +1,19 @@
+// navbar scroll
+$(window).on("scroll", function () {
+  let windowScroll = $(window).scrollTop();
+  if (windowScroll > 100) {
+    $(".navbar").addClass("bg-light");
+    $(".navbar").removeClass("bg-transparent");
+  } else {
+    $(".navbar").removeClass("bg-light");
+    $(".navbar").addClass("bg-transparent");
+  }
+});
+
+
+
+
+
 // select 
 $('.card-container:nth-child(even)').addClass( 'slideInDown')
 $('.card-container:nth-child(odd)').addClass( 'slideInUp')
@@ -552,3 +568,19 @@ $(".videoBox").on("click", function () {
 
 });
 
+// new home page
+
+$(document).ready(function(){
+  
+  $('.popularTourSlider').slick({
+    // adaptiveHeight:true,
+    arrows:true,
+    dots:true,
+    autoplay:false,
+    autoplaySpeed:1000,
+    speed:500,
+    lazyLoad:'progressive',
+
+  });
+ 
+});

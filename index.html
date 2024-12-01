@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./assets/css/animate.css" />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="./assets/css/slick.css" />
     <link rel="stylesheet" href="./assets/css/myStyle.css" />
   </head>
   <body>
@@ -179,28 +181,54 @@
     <!-- //. sign up Popup End -->
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+     <nav class="navbar navbar-expand-xxl fixed-top bg-transparent">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img
             src="./assets/img/home/logo.png"
             class="w-75"
             alt="Holiday logo"
           />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon">
-            <i class="fa fa-sliders fs-3"></i>
-          </span>
-        </button>
+        <div class="notification d-flex justify-content-between align-items-center mt-3">
+            <button
+              class="navbar-toggler me-2 "
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon">
+                <i class="fa fa-sliders fs-3"></i>
+              </span>
+            </button>
+
+            <div class="dropdown">
+                <button class="mainBtn outline text-capitalize dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  language
+                </button>
+                <ul class="dropdown-menu text-capitalize">
+                  <li><a class="dropdown-item" href="#">arabic</a></li>
+                  <li><a class="dropdown-item" href="#">english</a></li>
+                  <li><a class="dropdown-item" href="#">franch</a></li>
+                </ul>
+              </div>
+            
+            <div class="fixedBtns">
+                <a class=" mx-1 text-decoration-none" href="#">
+                    <button class=" mainBtn outline text-capitalize ">
+                      <span>offers</span>
+                    </button>
+                  </a>
+                  <a class=" mx-1 text-decoration-none" href="./make-trip.html">
+                    <button class=" mainBtn  text-capitalize ">
+                      <span>book now</span>
+                    </button>
+                  </a>
+            </div>
+        </div>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
@@ -222,450 +250,179 @@
             </li>
           </ul>
 
-          <div class="notification d-flex justify-content-between mt-3">
-            <a class="navLink text-decoration-none" href="./make-trip.html">
-              <button class="btn btn-yellow py-2">
-                <span>CUSTOMIZE TOUR</span>
-              </button>
-            </a>
-            <a class="signUp-btn ms-4 fs-3 nav-link">
-              <i class="fa-regular fa-user"></i>
-            </a>
-          </div>
         </div>
+
+        
       </div>
-    </nav>
+    </nav> 
 
     <!-- main section -->
-    <section class="main position-relative">
-      <div class="container">
-        <div class="row p-5">
-          <div class="col-lg-6">
-            <figure class="mainImg">
-              <img
-                src="./assets/img/home/man.png"
-                class="w-100 wow slideInUp"
-                alt=""
-              />
-              <div class="footImg wow slideInLeft">
-                <img src="./assets/img/home/1.png" class="w-100" alt="" />
-              </div>
-            </figure>
-          </div>
-          <div class="col-lg-6 d-flex align-items-center wow slideInDown">
-            <div class="caption p-2">
-              <h2 class="fw-bold text-white my-3">
-                Tour your dream destination with Holiday Package
-              </h2>
+    <main >
+      <div class="container-fluid px-0">
+        <div class="position-relative h-100 w-100">
+            <!-- src="https://www.youtube.com/embed/hNKyAl_oS0o?autoplay=1&loop=1&mute=1&playlist=hNKyAl_oS0o&rel=0" -->
+            <iframe
+                class="w-100 h-100"
+                src="https://player.vimeo.com/video/749111492?controls=1&loop=1&autopause=0&autoplay=1&muted=1"
+                allowfullscreen
+                frameborder="0">
+            </iframe>
 
-              <button class="btn btn-outline-warning py-2 mt-5">
-                <a class="navLink text-decoration-none" href="./make-trip.html"
-                  >Plan a trip</a
-                >
-                <i class="fa-solid fa-angle-right ms-3"></i>
-              </button>
+            <div class="position-absolute start-0 end-0 btnControls d-flex justify-content-center flex-wrap">
+                <a href="#" class="text-decoration-none">
+                    <button class="mainBtn outline fw-bold text-uppercase mx-3 p-2 mb-2 border-2 text-whit">view resorts</button>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <button class="mainBtn outline fw-bold text-uppercase mx-3 p-2 mb-2 border-2 text-whit">view experiences</button>
+                </a>
             </div>
-            <figure class="mapImg">
-              <img src="./assets/img/home/2.png" alt="" />
-            </figure>
-          </div>
         </div>
       </div>
-    </section>
+    </main>
 
     <!-- popular tours -->
     <section class="my-5">
-      <div class="container">
-        <h2 class="my-5 fs-1 fw-bolder wow slideInRight" data-wow-offset="200">
-          Our Popular Tours
-        </h2>
-        <div class="row g-4 h-100">
-          <div
-            class="card-container col-md-3 wow"
-            data-wow-delay="0.2s"
-            data-wow-offset="300"
-          >
-            <div class="card border-0" role="button">
-              <a href="./tour-details.html">
-                <figure class="position-relative">
-                  <img
-                    src="./assets/img/home/card1.png"
-                    class="w-100"
-                    alt="tour img"
-                  />
-                  <figcaption class="position-absolute bottom-0 m-3 text-white">
-                    <h4>Furka Pass, Obergoms</h4>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="my-4"></div>
-          </div>
-          <div
-            class="card-container col-md-3 wow"
-            data-wow-delay="0.2s"
-            data-wow-offset="300"
-          >
-            <div class="card border-0" role="button">
-              <a href="./tour-details.html">
-                <figure class="position-relative">
-                  <img
-                    src="./assets/img/home/card1.png"
-                    class="w-100"
-                    alt="tour img"
-                  />
-                  <figcaption class="position-absolute bottom-0 m-3 text-white">
-                    <h4>Furka Pass, Obergoms</h4>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="my-4"></div>
-          </div>
-          <div
-            class="card-container col-md-3 wow"
-            data-wow-delay="0.2s"
-            data-wow-offset="300"
-          >
-            <div class="card border-0" role="button">
-              <a href="./tour-details.html">
-                <figure class="position-relative">
-                  <img
-                    src="./assets/img/home/card1.png"
-                    class="w-100"
-                    alt="tour img"
-                  />
-                  <figcaption class="position-absolute bottom-0 m-3 text-white">
-                    <h4>Furka Pass, Obergoms</h4>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="my-4"></div>
-          </div>
-          <div
-            class="card-container col-md-3 wow"
-            data-wow-offset="300"
-            data-wow-delay="0.2s"
-          >
-            <div class="card border-0" role="button">
-              <a href="./tour-details.html">
-                <figure class="position-relative">
-                  <img
-                    src="./assets/img/home/card1.png"
-                    class="w-100"
-                    alt="tour img"
-                  />
-                  <figcaption class="position-absolute bottom-0 m-3 text-white">
-                    <h4>Furka Pass, Obergoms</h4>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="my-4"></div>
-          </div>
-          <div
-            class="card-container col-md-3 wow"
-            data-wow-offset="300"
-            data-wow-delay="0.2s"
-          >
-            <div class="card border-0" role="button">
-              <a href="./tour-details.html">
-                <figure class="position-relative">
-                  <img
-                    src="./assets/img/home/card1.png"
-                    class="w-100"
-                    alt="tour img"
-                  />
-                  <figcaption class="position-absolute bottom-0 m-3 text-white">
-                    <h4>Furka Pass, Obergoms</h4>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="my-4"></div>
-          </div>
-          <div
-            class="card-container col-md-3 wow"
-            data-wow-offset="300"
-            data-wow-delay="0.2s"
-          >
-            <div class="card border-0" role="button">
-              <a href="./tour-details.html">
-                <figure class="position-relative">
-                  <img
-                    src="./assets/img/home/card1.png"
-                    class="w-100"
-                    alt="tour img"
-                  />
-                  <figcaption class="position-absolute bottom-0 m-3 text-white">
-                    <h4>Furka Pass, Obergoms</h4>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="my-4"></div>
-          </div>
+      <div class="container-fluid px-0">
+        <div class=" text-center headTitle mx-auto">
+
+            <h2 class="text-uppercase  fw-bolder">
+                Laid Back Luxury Where Paradise Is Yours
+            </h2>
+            <p class="text-capitalize text-muted my-4">
+                As soon as you arrive at the Sun Siyam Maldives luxury resort, you’ll understand what people mean by the word “paradise.” With world-class accommodations, impeccable dining, and a rich variety of experiences, there’s plenty of room to savour and explore at our five luxury Sun Siyam Maldives resorts.
+            </p>
+
         </div>
+
+        <div class="popularTourSlider">
+            <div class="tourSlide">
+                <figure class="position-relative">
+                    <img src="./assets/img/13.jpeg" class="w-100" alt="popular tour image">
+                    <figcaption class="text-white bg-dark bg-opacity-75 position-absolute p-4 rounded-2 text-center">
+                        <span class="text-uppercase">maldives</span>
+                        <h3 class="text-uppercase">vilu reef</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="text-uppercase d-flex justify-content-center flex-wrap">
+                            <a href="#" class="text-decoration-none mx-2">
+                                <button class="mainBtn outline px-3 text-uppercase bg-transparent">view resort</button>
+                            </a>
+                            <a href="#" class="text-decoration-none mx-2">
+                                <button class="mainBtn outline px-3 text-uppercase bg-transparent">book now</button>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="tourSlide">
+                <figure class="position-relative">
+                    <img src="./assets/img/12.jpeg" class="w-100" alt="popular tour image">
+                    <figcaption class="text-white bg-dark bg-opacity-75 position-absolute p-4 rounded-2 text-center">
+                        <span class="text-uppercase">maldives</span>
+                        <h3 class="text-uppercase">vilu reef</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="text-uppercase d-flex justify-content-center flex-wrap">
+                            <a href="#" class="text-decoration-none mx-2">
+                                <button class="mainBtn outline px-3 text-uppercase bg-transparent">view resort</button>
+                            </a>
+                            <a href="#" class="text-decoration-none mx-2">
+                                <button class="mainBtn outline px-3 text-uppercase bg-transparent">book now</button>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="tourSlide">
+                <figure class="position-relative">
+                    <img src="./assets/img/11.jpeg" class="w-100" alt="popular tour image">
+                    <figcaption class="text-white bg-dark bg-opacity-75 position-absolute p-4 rounded-2 text-center">
+                        <span class="text-uppercase">maldives</span>
+                        <h3 class="text-uppercase">vilu reef</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="text-uppercase d-flex justify-content-center flex-wrap">
+                            <a href="#" class="text-decoration-none mx-2">
+                                <button class="mainBtn outline px-3 text-uppercase bg-transparent">view resort</button>
+                            </a>
+                            <a href="#" class="text-decoration-none mx-2">
+                                <button class="mainBtn outline px-3 text-uppercase bg-transparent">book now</button>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            
+          </div>
+
       </div>
+
     </section>
 
-    <!--why choise us -->
+    <!-- experience -->
+     <section class="my-5">
+        <div class="container-fluid px-0">
+            
+        </div>
+     </section>
+
+    <!-- read more tours -->
     <section class="my-5">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div
-            class="col-lg-5 exploreImg position-relative overflow-hidden wow slideInLeft"
-            data-wow-offset="300"
-          >
-            <figure>
-              <img src="./assets/img/home/weman.png" class="w-100" alt="" />
-            </figure>
-            <figcaption class="imgPosition">
-              <img src="./assets/img/home/1.png" class="w-100" alt="" />
-            </figcaption>
-          </div>
-
-          <div class="col-lg-6 wow slideInRight" data-wow-offset="300">
-            <div class="inner">
-              <h2 class="fs-1 fw-bolder">Why choose us 🙄</h2>
-              <ul class="list-unstyled mt-3">
-                <li class="d-flex mb-2 text-wrap">
-                  <div class="icon">
-                    <img
-                      src="./assets/img/home/24eead96-group-76.png"
-                      class="w-100"
-                      alt=""
-                    />
-                  </div>
-                  <div class="desc">
-                    <h4 class="mb-1 fs-3">Unique destination</h4>
-                    <p class="text-muted">
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words.
-                    </p>
-                  </div>
-                </li>
-
-                <li class="d-flex mb-2 text-wrap">
-                  <div class="icon">
-                    <img
-                      src="./assets/img/home/0c5a143f-group-762.png"
-                      class="w-100"
-                      alt=""
-                    />
-                  </div>
-                  <div class="desc">
-                    <h4 class="mb-1 fs-3">Worth of money</h4>
-                    <p class="text-muted">
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words.
-                    </p>
-                  </div>
-                </li>
-
-                <li class="d-flex mb-2 text-wrap">
-                  <div class="icon">
-                    <img
-                      src="./assets/img/home/a48ac2f6-group-763.png"
-                      class="w-100"
-                      alt=""
-                    />
-                  </div>
-                  <div class="desc">
-                    <h4 class="mb-1 fs-3">Wonderful places</h4>
-                    <p class="text-muted">
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Featured Destinations -->
-    <section class="my-5">
-      <div class="container">
-        <div
-          class="d-flex align-items-center justify-content-between wow slideInRight"
-          data-wow-offset="300"
-        >
-          <h2 class="my-5 fs-1 fw-bolder">Featured Destinations</h2>
-          <button class="btn btnNav btn-outline-success py-2">
-            <a
-              class="navLink text-decoration-none"
-              href="./destination-list.html"
-              >veiw all <i class="fa-solid fa-angle-right ms-3"></i
-            ></a>
-          </button>
-        </div>
-
-        <div class="row g-3 mb-3">
-          <div class="col-md-7 wow slideInDown" data-wow-offset="300">
-            <div class="destinationDetails" role="button">
-              <a href="./destination-details.html">
-                <figure
-                  class="position-relative imgHeight rounded-5 overflow-hidden"
-                >
-                  <img
-                    src="./assets/img/home/island-3542290_1280.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                  <figcaption
-                    class="layer bg-white border-1 rounded-5 py-2 px-4 text-center fs-3"
-                  >
-                    <i class="fa-solid fa-location-dot me-2"></i>
-                    <span class="fs-5">Isalnd</span>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-5 wow slideInRight" data-wow-offset="300">
-            <div class="destinationDetails" role="button">
-              <a href="./destination-details.html">
-                <figure
-                  class="position-relative imgHeight rounded-5 overflow-hidden"
-                >
-                  <img
-                    src="./assets/img/home/mystery-1599527_1920.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                  <figcaption
-                    class="layer bg-white border-1 rounded-5 text-center py-2 px-4 fs-3"
-                  >
-                    <i class="fa-solid fa-location-dot me-2"></i>
-                    <span class="fs-5">Death isalnd</span>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row g-3">
-          <div class="col-md-5 wow slideInLeft" data-wow-offset="300">
-            <div class="destinationDetails" role="button">
-              <a href="./destination-details.html">
-                <figure
-                  class="position-relative imgHeight rounded-5 overflow-hidden"
-                >
-                  <img
-                    src="./assets/img/home/fayoum1.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                  <figcaption
-                    class="layer bg-white border-1 rounded-5 py-2 px-4 text-center fs-3"
-                  >
-                    <i class="fa-solid fa-location-dot me-2"></i>
-                    <span class="fs-5">Fayoum</span>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-7 wow slideInUp" data-wow-offset="300">
-            <div class="destinationDetails" role="button">
-              <a href="./destination-details.html">
-                <figure
-                  class="position-relative imgHeight rounded-5 overflow-hidden"
-                >
-                  <img
-                    src="./assets/img/home/bagan-1137015_1280.jpg"
-                    class="w-100 h-100"
-                    alt=""
-                  />
-                  <figcaption
-                    class="layer bg-white border-1 rounded-5 text-center py-2 px-4 fs-3"
-                  >
-                    <i class="fa-solid fa-location-dot me-2"></i>
-                    <span class="fs-5">south africa</span>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- vedio -->
-    <section
-      class="my-5 pb-5 wow zoomIn"
-      data-wow-offset="300"
-      data-wow-delay="0.2s"
-    >
-      <div class="container">
-        <div class="videoBox position-relative pt-5">
-          <img
-            src="./assets/img/11.jpeg"
-            class="w-100 rounded-4"
-            alt="poster video"
-          />
-
-          <div class="bgMainColor ytubeIcon rounded-4 cPointer">
-            <button
-              type="button"
-              class="btn"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              <i class="fa fa-caret-right fs-2 text-white"></i>
-            </button>
-          </div>
-        </div>
-
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div class="videoBox position-relative pt-5">
-                  <video
-                    src="./assets/img/cinematic camping video [ nature video 4k ].mp4"
-                    autoplay
-                    muted
-                    controls
-                    width="100%"
-                    class="rounded-4 w-100 bg-dark rounded-5"
-                  ></video>
-
-                  <div
-                    class="bgMainColor ytubeIcon d-flex justify-content-center align-items-center rounded-4 cPointer"
-                  >
-                    <i
-                      class="fa fa-caret-right text-white fs-2"
-                      style="--fa-rotate-angle: -45deg"
-                    ></i>
-                  </div>
-                </div>
+        <div class="container-fluid px-0">
+          
+          <div class="popularTourSlider">
+              <div class="tourSlide">
+                  <figure class="position-relative">
+                      <img src="./assets/img/11.jpeg" class="w-100" alt="popular tour image">
+                      <figcaption class="text-white bg-dark bg-opacity-75 position-absolute p-4 py-5 rounded-2 text-center">
+                          <p class="text-uppercase fs-4">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                          <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Id.</p>
+                          
+                          <a href="#" class="text-decoration-none ">
+                              <button class="mainBtn outline px-3 text-uppercase bg-transparent m-2">read more</button>
+                          </a>
+                          
+                      </figcaption>
+                  </figure>
               </div>
+              <div class="tourSlide">
+                  <figure class="position-relative">
+                      <img src="./assets/img/12.jpeg" class="w-100" alt="popular tour image">
+                      <figcaption class="text-white bg-dark bg-opacity-75 position-absolute p-4 py-5 rounded-2 text-center">
+                          <p class="text-uppercase fs-4">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                          <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Id.</p>
+                          
+                          <a href="#" class="text-decoration-none ">
+                              <button class="mainBtn outline px-3 text-uppercase bg-transparent m-2">read more</button>
+                          </a>
+                          
+                      </figcaption>
+                  </figure>
+              </div>
+              <div class="tourSlide">
+                  <figure class="position-relative">
+                      <img src="./assets/img/13.jpeg" class="w-100" alt="popular tour image">
+                      <figcaption class="text-white bg-dark bg-opacity-75 position-absolute p-4 py-5 rounded-2 text-center">
+                          <p class="text-uppercase fs-4">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                          <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Id.</p>
+                          
+                          <a href="#" class="text-decoration-none ">
+                              <button class="mainBtn outline px-3 text-uppercase bg-transparent m-2">read more</button>
+                          </a>
+                          
+                      </figcaption>
+                  </figure>
+              </div>
+              
+              
+              
             </div>
-          </div>
+  
         </div>
-      </div>
-    </section>
+  
+      </section>
+  
 
+    
     <!-- contact -->
-    <section class="my-5">
+    <!-- <section class="my-5">
       <div class="container">
         <div class="row justify-content-between mt-3">
           <div class="col-lg-4">
@@ -808,7 +565,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <footer>
       <div class="box container-fluid p-3 rounded-top-5">
@@ -821,6 +578,7 @@
     <!-- <script src="./assets/js/sweetalert2@11.js"></script> -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/wow.min.js"></script>
 
     <!-- <script src="./assets/js/main.js"></script> -->
