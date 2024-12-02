@@ -573,12 +573,61 @@ $(".videoBox").on("click", function () {
 $(document).ready(function(){
   
   $('.popularTourSlider').slick({
-    // adaptiveHeight:true,
+    adaptiveHeight:true,
     arrows:true,
     dots:true,
-    autoplay:false,
-    autoplaySpeed:1000,
-    speed:500,
+    autoplay:true,
+    autoplaySpeed:2000,
+    speed:2000,
+    lazyLoad:'progressive',
+
+  });
+
+  $('.experienceSlider').slick({
+    adaptiveHeight:true,
+    autoplay:true,
+    autoplaySpeed:2000,
+    speed:2000,
+    lazyLoad:'progressive',
+    slidesToShow: 4,
+    dots:true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "20px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+
+  });
+
+  $('.offerSlider').slick({
+    adaptiveHeight:true,
+    arrows:false,
+    dots:true,
+    autoplay:true,
+    autoplaySpeed:2000,
+    speed:2000,
     lazyLoad:'progressive',
 
   });

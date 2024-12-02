@@ -117,7 +117,7 @@ main {
     transform: translateX(-50%);
     z-index: 900009 !important;
 } */
-  
+  /* width: 100vw; */
   /* margin-top: 90px; */
   & iframe{
     object-fit: cover;
@@ -211,7 +211,7 @@ figcaption.layer {
   transform: scale(0.8);
 }
 a.webLinks {
-  color: black;
+  color: #fff;
   transition: 0.7s all;
 }
 a.webLinks:hover {
@@ -222,6 +222,7 @@ a.webLinks:hover {
 footer .box {
   background-color: var(--mainColor);
   color: #fff;
+
 }
 
 /*style shared*/
@@ -737,6 +738,14 @@ input + label {
   p{letter-spacing: 1px;}
 }
 
+.slick-dots{
+  li{border-radius: 50%; border: 1px solid black;}
+
+  li.slick-active{
+    background-color: black;
+  }
+}
+
 .popularTourSlider{
 
   .tourSlide{
@@ -775,11 +784,6 @@ input + label {
 
   .slick-dots {
     bottom: 6%;
-    li{border-radius: 50%; border: 1px solid black;}
-
-    li.slick-active{
-      background-color: black;
-    }
   }
   .slick-next {
     right: 50px;
@@ -792,12 +796,132 @@ input + label {
   
 }
 
+.experienceSlider{
+  margin-bottom: 90px !important;
+  .item{
+    height: 380px;
+    
+    figure {
+      transition: all 1s;
+
+      &:hover{
+        transform: rotate(1deg) scale(1.05);
+      }
+    }
+
+    figcaption{
+      inset: 0;
+      letter-spacing: 2px;
+    }
+
+  }
+  .slick-dots{
+    display: block;
+    bottom: -50px ;
+  }
+}
+
+.offerSlider{
+  .parent {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "right right right right top top top"
+      "right right right right bottom bottom bottom";
+  }
+
+  
+  .right {
+    overflow: hidden; grid-area: right; 
+    figcaption{
+      h5{font-size: 24px;  }
+    }
+  
+  }
+  .top {overflow: hidden; grid-area: top; height: 350px;}
+  .bottom {overflow: hidden; grid-area: bottom; height: 350px;}
+
+  figure{
+    transition: all 1s;
+    &:hover{
+      transform: rotate(1deg) scale(1.05);
+    }
+  }
+
+  figcaption{
+    color: #736E71;
+    h5{font-size: 26px; letter-spacing: 2px; }
+    h6{ letter-spacing: 2px; }
+  }
+  
+}
+
+.followUs{
+  .followText{
+    h5{font-size: 33px ; letter-spacing: 2px; color: #736E71;}
+    a{
+      color: var(--mainColor);
+      transition: all 1s;
+      &:hover{
+        color: var(--hoverColor);
+
+      }
+
+    }
+  }
+  .followLink{
+
+    figcaption{
+      transform: translateX(-110%);
+      transition: all 1s;
+    }
+    &:hover figcaption{
+      transform: translateX(0%);
+    }
+    .socialIcon{
+      top: 5px;
+      right: 5px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+footer .box{
+  figure{
+    width: fit-content;
+  }
+}
 
 
 
 
 
 
+
+@media screen and (max-width:992px) {
+  .offerSlider{
+       .parent {
+        grid-template-areas:
+      "right right right right right right right"
+      "right right right right right right right";
+        .top, .bottom{
+          display: none;
+        }
+       }
+  }
+
+  footer .box{
+    flex-direction: column;
+    justify-content: center !important;
+  }
+
+
+
+}
 
 @media screen and (max-width:767px) {
   .headTitle{
@@ -835,6 +959,13 @@ input + label {
     }
     .slick-prev{
       left: 10px;
+    }
+  }
+
+  .offerSlider{
+    figcaption{
+      padding-inline: 3px !important;
+      h5,h6,p{font-size: 14px !important; }
     }
   }
 
